@@ -19,3 +19,12 @@ function second() {
     console.log('second() : 호출됨');
   };
 }
+
+class ExampleClass {
+  @first()
+  @second()
+  method() {
+    console.log('메서드가 호출되었다.');
+  }
+}
+
